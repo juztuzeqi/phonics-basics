@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bridging Test - Short A ↔ Short I</title>
+<style>
+    @media print {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            padding: 1mm;
+        }
+        .no-print {
+            display: none;
+        }
+        .grid, .soal {
+            page-break-inside: avoid;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        max-width: 190mm;
+        width: 100%;
+        background: white;
+    }
+    
+    .header {
+        text-align: center;
+        margin-bottom: 3mm;
+        border-bottom: 0.2mm solid black;
+        padding-bottom: 1mm;
+    }
+    
+    .title {
+        font-size: 4.5mm;
+        font-weight: bold;
+    }
+    
+    .subtitle {
+        font-size: 3mm;
+    }
+    
+    .info {
+        font-size: 2.8mm;
+        text-align: center;
+        margin-bottom: 5mm;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2mm 3mm;
+    }
+    
+    .soal {
+        text-align: center;
+    }
+    
+    .soal-img {
+        width: 14mm;
+        height: 14mm;
+        border: 0.2mm solid gray;
+        margin: 0 auto 1.5mm auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f9f9f9;
+    }
+    
+    .soal-img img {
+        max-width: 11mm;
+        max-height: 11mm;
+    }
+    
+    .soal-nomor {
+        font-size: 2.8mm;
+    }
+    
+    .jawaban-line {
+        border-bottom: 0.2mm solid black;
+        width: 15mm;
+        display: inline-block;
+    }
+    
+    button {
+        margin-top: 20px;
+        padding: 8px 16px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Bridging Test</div>
+            <div class="subtitle">Short A ↔ Short I</div>
+        </div>
+        <div class="info">
+            Number of items: 20 | Passing: 5 maximum errors
+        </div>
+        
+        <div class="grid">
+            <!-- 1. cat (A) -->
+            <div class="soal">
+                <div class="soal-nomor">1.</div>
+                <div class="soal-img"><img src="../short-a/images/cat.png" alt="cat"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 2. wig (I) -->
+            <div class="soal">
+                <div class="soal-nomor">2.</div>
+                <div class="soal-img"><img src="../short-i/images/wig.png" alt="wig"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 3. bag (A) -->
+            <div class="soal">
+                <div class="soal-nomor">3.</div>
+                <div class="soal-img"><img src="../short-a/images/bag.png" alt="bag"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 4. pin (I) -->
+            <div class="soal">
+                <div class="soal-nomor">4.</div>
+                <div class="soal-img"><img src="../short-i/images/pin.png" alt="pin"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 5. man (A) -->
+            <div class="soal">
+                <div class="soal-nomor">5.</div>
+                <div class="soal-img"><img src="../short-a/images/man.png" alt="man"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 6. sit on bin (I) -->
+            <div class="soal">
+                <div class="soal-nomor">6.</div>
+                <div class="soal-img"><img src="../short-i/images/sit-on-bin.png" alt="sit on bin"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 7. hat (A) -->
+            <div class="soal">
+                <div class="soal-nomor">7.</div>
+                <div class="soal-img"><img src="../short-a/images/hat.png" alt="hat"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 8. lip (I) -->
+            <div class="soal">
+                <div class="soal-nomor">8.</div>
+                <div class="soal-img"><img src="../short-i/images/lip.png" alt="lip"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 9. fat cat (A) -->
+            <div class="soal">
+                <div class="soal-nomor">9.</div>
+                <div class="soal-img"><img src="../short-a/images/fat-cat.png" alt="fat cat"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 10. kid in bin (I) -->
+            <div class="soal">
+                <div class="soal-nomor">10.</div>
+                <div class="soal-img"><img src="../short-i/images/kid-in-bin.png" alt="kid in bin"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 11. van (A) -->
+            <div class="soal">
+                <div class="soal-nomor">11.</div>
+                <div class="soal-img"><img src="../short-a/images/van.png" alt="van"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 12. big wig (I) -->
+            <div class="soal">
+                <div class="soal-nomor">12.</div>
+                <div class="soal-img"><img src="../short-i/images/big-wig.png" alt="big wig"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 13. cap on man (A) -->
+            <div class="soal">
+                <div class="soal-nomor">13.</div>
+                <div class="soal-img"><img src="../short-a/images/cap-on-man.png" alt="cap on man"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 14. fix (I) -->
+            <div class="soal">
+                <div class="soal-nomor">14.</div>
+                <div class="soal-img"><img src="../short-i/images/fix.png" alt="fix"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 15. pan (A) -->
+            <div class="soal">
+                <div class="soal-nomor">15.</div>
+                <div class="soal-img"><img src="../short-a/images/pan.png" alt="pan"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 16. zip my lip (I) -->
+            <div class="soal">
+                <div class="soal-nomor">16.</div>
+                <div class="soal-img"><img src="../short-i/images/zip-my-lip.png" alt="zip my lip"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 17. jam (A) -->
+            <div class="soal">
+                <div class="soal-nomor">17.</div>
+                <div class="soal-img"><img src="../short-a/images/jam.png" alt="jam"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 18. mix (I) -->
+            <div class="soal">
+                <div class="soal-nomor">18.</div>
+                <div class="soal-img"><img src="../short-i/images/mix.png" alt="mix"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 19. man on mat (A) -->
+            <div class="soal">
+                <div class="soal-nomor">19.</div>
+                <div class="soal-img"><img src="../short-a/images/man-on-mat.png" alt="man on mat"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 20. big bag (I, review A) -->
+            <div class="soal">
+                <div class="soal-nomor">20.</div>
+                <div class="soal-img"><img src="../short-i/images/big-bag.png" alt="big bag"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="no-print" style="text-align: center;">
+        <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+    </div>
+</body>
+</html>
