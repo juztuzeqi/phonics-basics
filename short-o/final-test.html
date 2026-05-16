@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Test - Short O</title>
+<style>
+    @media print {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            padding: 1mm;
+        }
+        .no-print {
+            display: none;
+        }
+        .grid, .soal {
+            page-break-inside: avoid;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        max-width: 190mm;
+        width: 100%;
+        background: white;
+    }
+    
+    .header {
+        text-align: center;
+        margin-bottom: 3mm;
+        border-bottom: 0.2mm solid black;
+        padding-bottom: 1mm;
+    }
+    
+    .title {
+        font-size: 4.5mm;
+        font-weight: bold;
+    }
+    
+    .subtitle {
+        font-size: 3mm;
+    }
+    
+    .info {
+        font-size: 2.8mm;
+        text-align: center;
+        margin-bottom: 5mm;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2mm 3mm;
+    }
+    
+    .soal {
+        text-align: center;
+    }
+    
+    .soal-img {
+        width: 14mm;
+        height: 14mm;
+        border: 0.2mm solid gray;
+        margin: 0 auto 1.5mm auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f9f9f9;
+    }
+    
+    .soal-img img {
+        max-width: 11mm;
+        max-height: 11mm;
+    }
+    
+    .soal-nomor {
+        font-size: 2.8mm;
+    }
+    
+    .jawaban-line {
+        border-bottom: 0.2mm solid black;
+        width: 15mm;
+        display: inline-block;
+    }
+    
+    button {
+        margin-top: 20px;
+        padding: 8px 16px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Final Test</div>
+            <div class="subtitle">Short O</div>
+        </div>
+        <div class="info">
+            Number of items: 15 | Passing: 3 maximum errors
+        </div>
+        
+        <div class="grid">
+            <!-- 1. dog -->
+            <div class="soal">
+                <div class="soal-nomor">1.</div>
+                <div class="soal-img"><img src="images/dog.png" alt="dog"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 2. log -->
+            <div class="soal">
+                <div class="soal-nomor">2.</div>
+                <div class="soal-img"><img src="images/log.png" alt="log"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 3. fog -->
+            <div class="soal">
+                <div class="soal-nomor">3.</div>
+                <div class="soal-img"><img src="images/fog.png" alt="fog"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 4. hot -->
+            <div class="soal">
+                <div class="soal-nomor">4.</div>
+                <div class="soal-img"><img src="images/hot.png" alt="hot"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 5. hot dog -->
+            <div class="soal">
+                <div class="soal-nomor">5.</div>
+                <div class="soal-img"><img src="images/hot-dog.png" alt="hot dog"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 6. box -->
+            <div class="soal">
+                <div class="soal-nomor">6.</div>
+                <div class="soal-img"><img src="images/box.png" alt="box"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 7. fox -->
+            <div class="soal">
+                <div class="soal-nomor">7.</div>
+                <div class="soal-img"><img src="images/fox.png" alt="fox"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 8. ox -->
+            <div class="soal">
+                <div class="soal-nomor">8.</div>
+                <div class="soal-img"><img src="images/ox.png" alt="ox"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 9. dog in box -->
+            <div class="soal">
+                <div class="soal-nomor">9.</div>
+                <div class="soal-img"><img src="images/dog-in-box.png" alt="dog in box"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 10. fox in box -->
+            <div class="soal">
+                <div class="soal-nomor">10.</div>
+                <div class="soal-img"><img src="images/fox-in-box.png" alt="fox in box"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 11. pot -->
+            <div class="soal">
+                <div class="soal-nomor">11.</div>
+                <div class="soal-img"><img src="images/pot.png" alt="pot"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 12. hot pot -->
+            <div class="soal">
+                <div class="soal-nomor">12.</div>
+                <div class="soal-img"><img src="images/hot-pot.png" alt="hot pot"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 13. top -->
+            <div class="soal">
+                <div class="soal-nomor">13.</div>
+                <div class="soal-img"><img src="images/top.png" alt="top"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 14. mop -->
+            <div class="soal">
+                <div class="soal-nomor">14.</div>
+                <div class="soal-img"><img src="images/mop.png" alt="mop"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 15. hop -->
+            <div class="soal">
+                <div class="soal-nomor">15.</div>
+                <div class="soal-img"><img src="images/hop.png" alt="hop"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="no-print" style="text-align: center;">
+        <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+    </div>
+</body>
+</html>

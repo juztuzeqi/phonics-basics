@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Test - Short U (/ʌ/)</title>
+<style>
+    @media print {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            padding: 1mm;
+        }
+        .no-print {
+            display: none;
+        }
+        .grid, .soal {
+            page-break-inside: avoid;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        max-width: 190mm;
+        width: 100%;
+        background: white;
+    }
+    
+    .header {
+        text-align: center;
+        margin-bottom: 3mm;
+        border-bottom: 0.2mm solid black;
+        padding-bottom: 1mm;
+    }
+    
+    .title {
+        font-size: 4.5mm;
+        font-weight: bold;
+    }
+    
+    .subtitle {
+        font-size: 3mm;
+    }
+    
+    .info {
+        font-size: 2.8mm;
+        text-align: center;
+        margin-bottom: 5mm;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2mm 3mm;
+    }
+    
+    .soal {
+        text-align: center;
+    }
+    
+    .soal-img {
+        width: 14mm;
+        height: 14mm;
+        border: 0.2mm solid gray;
+        margin: 0 auto 1.5mm auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f9f9f9;
+    }
+    
+    .soal-img img {
+        max-width: 11mm;
+        max-height: 11mm;
+    }
+    
+    .soal-nomor {
+        font-size: 2.8mm;
+    }
+    
+    .jawaban-line {
+        border-bottom: 0.2mm solid black;
+        width: 15mm;
+        display: inline-block;
+    }
+    
+    button {
+        margin-top: 20px;
+        padding: 8px 16px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Final Test</div>
+            <div class="subtitle">Short U (/ʌ/)</div>
+        </div>
+        <div class="info">
+            Number of items: 15 | Passing: 3 maximum errors
+        </div>
+        
+        <div class="grid">
+            <!-- 1. bug -->
+            <div class="soal">
+                <div class="soal-nomor">1.</div>
+                <div class="soal-img"><img src="images/bug.png" alt="bug"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 2. hug -->
+            <div class="soal">
+                <div class="soal-nomor">2.</div>
+                <div class="soal-img"><img src="images/hug.png" alt="hug"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 3. rug -->
+            <div class="soal">
+                <div class="soal-nomor">3.</div>
+                <div class="soal-img"><img src="images/rug.png" alt="rug"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 4. mud -->
+            <div class="soal">
+                <div class="soal-nomor">4.</div>
+                <div class="soal-img"><img src="images/mud.png" alt="mud"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 5. bug in mud -->
+            <div class="soal">
+                <div class="soal-nomor">5.</div>
+                <div class="soal-img"><img src="images/bug-in-mud.png" alt="bug in mud"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 6. sun -->
+            <div class="soal">
+                <div class="soal-nomor">6.</div>
+                <div class="soal-img"><img src="images/sun.png" alt="sun"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 7. run -->
+            <div class="soal">
+                <div class="soal-nomor">7.</div>
+                <div class="soal-img"><img src="images/run.png" alt="run"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 8. bun -->
+            <div class="soal">
+                <div class="soal-nomor">8.</div>
+                <div class="soal-img"><img src="images/bun.png" alt="bun"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 9. run in sun -->
+            <div class="soal">
+                <div class="soal-nomor">9.</div>
+                <div class="soal-img"><img src="images/run-in-sun.png" alt="run in sun"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 10. nut -->
+            <div class="soal">
+                <div class="soal-nomor">10.</div>
+                <div class="soal-img"><img src="images/nut.png" alt="nut"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 11. hut -->
+            <div class="soal">
+                <div class="soal-nomor">11.</div>
+                <div class="soal-img"><img src="images/hut.png" alt="hut"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 12. cut -->
+            <div class="soal">
+                <div class="soal-nomor">12.</div>
+                <div class="soal-img"><img src="images/cut.png" alt="cut"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 13. bug in hut -->
+            <div class="soal">
+                <div class="soal-nomor">13.</div>
+                <div class="soal-img"><img src="images/bug-in-hut.png" alt="bug in hut"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 14. nut in hut -->
+            <div class="soal">
+                <div class="soal-nomor">14.</div>
+                <div class="soal-img"><img src="images/nut-in-hut.png" alt="nut in hut"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+            <!-- 15. rug in mud -->
+            <div class="soal">
+                <div class="soal-nomor">15.</div>
+                <div class="soal-img"><img src="images/rug-in-mud.png" alt="rug in mud"></div>
+                <div class="soal-jawab">→ <span class="jawaban-line"></span></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="no-print" style="text-align: center;">
+        <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+    </div>
+</body>
+</html>
